@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription aux Ateliers</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <button id="toggleModeButton3">
+      <a
+        href="/Users/raphaelsamson/Downloads/JS-INTERACTIONS/Swiper js - Copie/index.html"
+        class="retour-btn"
+        >Retour</a
+      >
+    </button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+
+    <div class="message-success">Formulaire envoyé avec succès !</div>
+    <form
+      id="inscription-form"
+      action=""
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Votre Nom" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          placeholder="Votre Prénom"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Votre Email" />
+      </div>
+      <div class="form-group">
+        <label for="homme">Homme</label>
+        <input type="radio" id="homme" name="sexe" value="homme" />
+      </div>
+      <div class="form-group">
+        <label for="femme">Femme</label>
+        <input type="radio" id="femme" name="sexe" value="femme" />
+      </div>
+
+      <div>
+        <label for="axe">Axe Préféré</label>
+        <select name="axe" id="axe">
+          <option value="">Choisissez...</option>
+          <option value="concerts">Concerts</option>
+          <option value="photographie">Photographie</option>
+          <option value="cinema">Cinéma</option>
+        </select>
+      </div>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <script src="main2.js"></script>
+  </body>
+</html>
